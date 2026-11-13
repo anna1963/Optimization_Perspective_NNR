@@ -225,9 +225,9 @@ for i in range(J_tot.shape[1]):
     J_tot[:,i] = J*1
 
 import pickle
-f = open(directory_name+'/J_tot.pkl', 'wb')
-pickle.dump(J_tot, f)
-f.close()
+#f = open(directory_name+'/J_tot.pkl', 'wb')
+#pickle.dump(J_tot, f)
+#f.close()
 
 """A^TA nad AA^T have the same non-zero eigenvalues"""
 W_J_tot = W@J_tot

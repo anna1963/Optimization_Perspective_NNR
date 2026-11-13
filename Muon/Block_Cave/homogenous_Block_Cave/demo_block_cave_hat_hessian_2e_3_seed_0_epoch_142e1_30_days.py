@@ -142,9 +142,9 @@ is_active = basic_cave_1_fwd_mesh > 0.0
 active_map = simpeg.maps.InjectActiveCells(mesh, is_active, valInactive=0.0)
 
 import pickle
-f = open('../hat_cave_1'+'.pkl', 'rb')
-hat_cave_1_fwd = pickle.load(f)
-f.close()
+#f = open('../hat_cave_1'+'.pkl', 'rb')
+#hat_cave_1_fwd = pickle.load(f)
+#f.close()
 
 # Create the muon simulation object. Assume 30 day exposure time
 day = 86400.0 # number of seconds in a day
@@ -227,9 +227,9 @@ for i in range(J_tot.shape[1]):
     J_tot[:,i] = J*1
 
 import pickle
-f = open(directory_name+'/J_tot.pkl', 'wb')
-pickle.dump(J_tot, f)
-f.close()
+#f = open(directory_name+'/J_tot.pkl', 'wb')
+#pickle.dump(J_tot, f)
+#f.close()
 
 """A^TA nad AA^T have the same non-zero eigenvalues"""
 W_J_tot = W@J_tot
